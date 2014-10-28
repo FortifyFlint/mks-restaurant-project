@@ -30,11 +30,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
 }
 
-@media only screen and (min-width: 40.063em) {
+/*@media only screen and (min-width: 40.063em) {
     .medium-4 {
         width: 33.33333%;
     }
-}
+}*/
 
 
 
@@ -47,7 +47,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Header --------------------------------------- */
 /* ---------------------------------------------- */
 
-header {}
+/*header {
+    height: 100%;
+    width: 100%;
+}*/
 
 header h1 {
     /* TODO make the font size larger than Foundation's default; I uesd 4.5em */
@@ -66,15 +69,17 @@ header .tagline h4 {
 
 header .tagline {
     /* TODO center the text */
+    margin: auto;
     text-align: center;
     background: rgba(34, 28, 18,.5); /* I added this transparent background bar for you. */
     /* TODO add some padding to give it space around the text */
-    padding-left: 20px;
+    padding: 5px 5px 5px 5px;
     /* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */
     position: absolute;
-    width: 100%;
+/*    top: 35%;
+*/    min-width: 100%;
     /* TODO when you make the slideshow work, the tagline will get hidden. why? what line of CSS do you have to write to make it appear ABOVE the slideshow? */
-        z-index: 1;
+        z-index: 1000;
 
 }
 

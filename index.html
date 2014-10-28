@@ -28,7 +28,7 @@
     </head>
     <body>
         <!-- Slide/Header Image -->
-        <header>
+        <header class="header">
 
             <!-- Tagline inside Slideshow -->
             <div class="tagline">
@@ -42,6 +42,30 @@
             <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
                 <div>
                     <img src="images/chavez-2.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-3.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-4.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-5.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-6.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-7.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-8.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-9.jpg">
+                </div>
+                <div>
+                    <img src="images/chavez-10.jpg">
                 </div>
             </div>
         </header>
@@ -234,10 +258,25 @@
 
         <!-- Our JS -->
         <!-- TODO link to our script.js file -->
-
+                <script type="text/javascript" src="js/slick.min.js">
+        
         <!-- Slick.js Slideshow -->
         <!-- TODO link to the slick.min.js file -->
+            <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
         <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
+
+        <script>$('#slides').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade: true,
+            cssEase: 'linear',
+
+        })</script>
+
+        
         <!-- TODO by default this slideshow JS doesn't autoplay. can you add the following settings into the slick() function? autoplay: true, autoplaySpeed: 2000, fade: true, cssEase: 'linear'. Check out the http://kenwheeler.github.io/slick/ website for examples and how to's! -->
 
 
